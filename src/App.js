@@ -10,7 +10,7 @@ function App() {
         { attribute1: 'Value 1', attribute2: 'Value 2', attribute3: 'Value 3' },
         
     ]);
-    const result = "true"
+  
     const [input , setinput] =useState(false)
 
     
