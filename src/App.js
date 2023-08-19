@@ -3,19 +3,21 @@ import "./App.css";
 // import App from './Components/enableDisable/App.js'
 
 function App() {
-   const result = "true"
     const [initialData, setInitialData] = useState([
         { attribute1: 'Value 1', attribute2: 'Value 2', attribute3: 'Value 3' },
         { attribute1: 'Value 1', attribute2: 'Value 2', attribute3: 'Value 3' },
         { attribute1: 'Value 1', attribute2: 'Value 2', attribute3: 'Value 3' },
         { attribute1: 'Value 1', attribute2: 'Value 2', attribute3: 'Value 3' },
-      
-    ]);
-
-    function enable(event){
-        event.currentTarget.disabled = true;
         
-    }
+    ]);
+    const result = "true"
+    const [input , setinput] =useState(false)
+
+    
+  
+    
+        
+    
     
 
     return (
@@ -48,10 +50,10 @@ function App() {
             <div className="button-container">
                 
 
-              <button disabled={result ? true : false}>Disable</button>
-            
+            <button disabled={input} onClick={()=>setinput(true)}>Disable</button> 
              
-                <button enable={result ? true : false}>enable</button>
+            <button >enable</button>
+               
             </div>
         </div>
     );
